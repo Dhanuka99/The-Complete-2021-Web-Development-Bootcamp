@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css class and spans</title>
+    <style>
+        .blueboldtext{
+            color: blue;
+            font-weight: bold;
+        }
+
+        .largegreentext{
+            font-size: large;
+            color: green;
+        }
+
+        .underlineBold{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+<p class="blueboldtext">Lorem ipsum dolor sit amet,<span class="largegreentext">consectetur adipisicing elit.</span>  A ab animi dicta dolor dolore, ducimus eaque et fuga fugiat inventore
+    iste labore laborum nam quam repellendus sed tenetur vitae voluptate!</p>
+
+<p class="largegreentext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab animi dicta dolor dolore, ducimus eaque et fuga fugiat inventore
+    iste labore laborum nam quam repellendus sed <span class="blueboldtext">tenetur</span> vitae voluptate!</p>
+
+<p class="underlineBold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab animi dicta dolor dolore, ducimus eaque et fuga fugiat inventore
+    iste laborespan <span class="blueboldtext"> nothing</span> laborum nam quam repellendus sed tenetur vitae voluptate!</p>
+</body>
+</html>
