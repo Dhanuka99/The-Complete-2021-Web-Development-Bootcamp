@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Form</title>
+</head>
+<body>
+<form action="send.php" method="post" name="customerForm">
+    <table>
+        <tr>
+            <td>Customer Application</td>
+        </tr>
+        <tr>
+            <td>First Name :</td>
+            <td><input type="text" id="fname" maxlength="30"></td>
+        </tr>
+        <tr>
+            <td>Last Name :</td>
+            <td><input type="text" id="lname" maxlength="30"></td>
+        </tr>
+        <tr>
+            <td>Position :</td>
+            <td>
+                <select name="position" id="po">
+                    <option value="ac">Accountant</option>
+                    <option value="rc">Reception</option>
+                    <option value="ad">Administrator</option>
+                    <option value="sp">Supervisor</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Experience Level :</td>
+            <td>
+                <select name="experience" id="ex">
+                    <option value="el">Entry level</option>
+                    <option value="se">Some Experience</option>
+                    <option value="ve">Very Experience</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Job Type :</td>
+            <td><input type="checkbox" name="ft">Full-Time
+            <input type="checkbox" name="pt">Part-Time
+            <input type="checkbox" name="ct">Contact</td>
+        </tr>
+        <tr>
+            <td>Employee Status:</td>
+            <td><input type="radio" name="ep">Employed
+            <input type="radio" name="up">Unemployed
+            <input type="radio" name="st">Student</td>
+        </tr>
+        <tr>
+            <td>Additional Comment:</td>
+            <td><textarea name="comment" id="comment" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="button">Submit</button>
+                <button type="reset">Rest</button>
+            </td>
+
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
