@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#square").animate({left: '800px'}, 1000);
+    });
+});
+</script>
+
+<style>
+
+#square{
+	background:blue;
+	height:160px;
+	width:160px;
+	margin-top:5px;
+	position:absolute;
+}
+
+</style>
+</head>
+<body>
+
+<button>Star Animation</button>
+
+<div id="square"></div>
+
+</body>
+</html>

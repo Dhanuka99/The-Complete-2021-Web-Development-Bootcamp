@@ -3,8 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="description" content="page description here" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body{
+            color: red;
+        }
+    </style>
 </head>
 <body>
+<!--html paragraph tag-->
+<p>This is a simple html document</p>
+<p>The java script will capitalize my name</p>
+<p>Enter Your Name : <input type="text" id="fname" onchange="myFunction()"></p>
 
+<!--html line break-->
+
+<p>This is line 1.<br> This is line 2.</p>
+
+<!--non-breaking space-->
+<p>This is line 1.  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   This is line 2</p>
+
+<!--html header-->
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+<h3>Header 3</h3>
+<h4>Header 4</h4>
+<h5>Header 5</h5>
+<h6>Header 6</h6>
+
+<!--HTML Text Formatting and Decoration-->
+<p>
+    <strong>Bold Text</strong>
+    <em>Italic Text</em>
+    <u>Underline Text</u>
+    <strike>Strick Text</strike><br>
+    <strong><u><em>Bold italic and underline</em></u></strong>
+
+</p>
+
+<!--HTML Inline Text Formatting-->
+
+<h1><font face="arial" size="30px" color="blue">This is a header </font></h1>
+
+<!--HTML Unordered Lists-->
+<h3>My favorite Sports</h3>
+<ul >
+    <li>Cricket</li>
+    <li>Volley ball</li>
+    <li>foot ball</li>
+</ul>
+
+<!--HTML Ordered Lists-->
+<h3>My favorite vacations</h3>
+<ol >
+    <li>Miami,FL</li>
+    <li>New York, NY</li>
+    <li>Los Vegas, NV</li>
+    <li>Houston, TX</li>
+</ol>
+
+<!--HTML Image Insertion-->
+<h3>Vacation picture</h3>
+<p>
+    <img src="img/back1.jpg" alt="back" width="375" height="250">
+    <img src="img/service2.PNG" alt="service 1" width="375" height="250">
+    <img src="img/service3.PNG" alt="service 2" width="375" height="250" >
+</p>
+
+<img src="img/service4.PNG" alt="service 4" width="375" height="250"><br>
+
+<!--HTML Embedding Videos-->
+
+<video width="320" height="240" autoplay>
+    <source src="img/1.webm" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!--HTML Absolute vs. Relative File Referencing-->
+<video width="320" height="240" autoplay>
+    <source src="??????????????????" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!--HTML Link Creation-->
+
+
+<a href="https://www.google.com/" target="_blank"><img src="img/service3.PNG" alt="service 2" width="375" height="250" ></a>
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+<!--The target attribute specifies where to open the linked document.-->
+
+<!--The target attribute can have one of the following values:-->
+
+<!--_self - Default. Opens the document in the same window/tab as it was clicked-->
+<!--_blank - Opens the document in a new window or tab-->
+<!--_parent - Opens the document in the parent frame-->
+<!--_top - Opens the document in the full body of the window-->
+
+<!--HTML Tables-->
+
+<caption>Weekly scores</caption>
+<table border="1" style="width:100%" cellpadding="6" cellspacing="3">
+   <thead>
+   <tr>
+       <th>Name</th>
+       <th colspan="2">Subject & Marks</th>
+
+   </tr>
+   </thead>
+    <tbody>
+    <tr>
+        <td>Dhanuka</td>
+        <td>Combined maths</td>
+        <td>80%</td>
+    </tr>
+    <tr>
+        <td>lahiru</td>
+        <td>physics</td>
+        <td>70%</td>
+    </tr>
+    <tr>
+        <td>udara</td>
+        <td>Chemistry</td>
+        <td rowspan="2">90%</td>
+    </tr>
+    <tr>
+        <td>Bashana</td>
+        <td>Bio</td>
+
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function myFunction(){
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+</script>
 </body>
 </html>

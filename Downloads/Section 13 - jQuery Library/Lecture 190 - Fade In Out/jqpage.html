@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn(1000);
+        $("#div3").fadeIn(3000);
+        $("#div4").fadeIn(5000);
+    });
+});
+</script>
+
+<style>
+
+	.box {
+
+	width:160px;
+	height:160px;
+	display:none;
+	background-color:red;
+
+	}
+
+</style>
+
+</head>
+<body>
+
+<button>Fade Effect</button><br><br>
+
+<div id="div1" class="box"></div><br>
+<div id="div2" class="box"></div><br>
+<div id="div3" class="box"></div><br>
+<div id="div4" class="box"></div><br>
+
+</body>
+</html>

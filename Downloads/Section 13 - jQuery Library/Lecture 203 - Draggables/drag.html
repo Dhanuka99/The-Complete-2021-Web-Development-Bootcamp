@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  
+  <style>
+   
+  #drag { 
+	width: 150px; 
+	height: 150px; 
+	background: blue; 
+	}
+	
+  </style>
+  
+  <script>
+  $(document).ready(function(){
+	  $(function() {
+		$( "#drag" ).draggable();
+	  });
+  });
+  </script>
+  
+</head>
+<body>
+ 
+<div id="drag"></div>
+ 
+</body>
+</html>

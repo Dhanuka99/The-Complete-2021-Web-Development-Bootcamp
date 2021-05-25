@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("img").before("<b>Text Added Before Element.</b>");
+		});
+
+		$("#btn2").click(function(){
+			$("img").after("<i>Text Added After Element.</i>");
+		});
+	});
+	</script>
+</head>
+<body>
+
+	<img src="http://www.youaccel.com/admin/uploadscript/tmp/o5ymiVGp.jpg" width="150" height="150"><br><br>
+
+	<button id="btn1">Insert before</button>
+	<button id="btn2">Insert after</button>
+
+</body>
+</html>

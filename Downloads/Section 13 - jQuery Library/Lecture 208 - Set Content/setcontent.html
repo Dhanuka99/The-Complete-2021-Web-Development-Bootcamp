@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("#text1").text("New Text Line");
+		});
+		$("#btn2").click(function(){
+			$("#text2").html("<b>Bold Text Line</b>");
+		});
+		$("#btn3").click(function(){
+			$("#name").val("Jane Wills");
+		});
+	});
+	</script>
+</head>
+<body>
+
+	<p id="text1">Text Line 1.</p>
+	<p id="text2">Text Line 2.</p>
+
+	<p>Name: <input type="text" id="name" value="John Smith"></p>
+
+	<button id="btn1">Reset Text</button>
+	<button id="btn2">Reset HTML</button>
+	<button id="btn3">Reset Value</button>
+
+</body>
+</html>
