@@ -48,6 +48,86 @@
     a:hover{
       background: #00ccff;
     }
+
+    #contentwrapper{
+      float: left;
+      width: 100%;
+    }
+
+    #contentColumn{
+      margin: 0 230px 0 230px;
+    }
+
+    #leftcolumn{
+      float: left;
+      width: 230px;
+      margin-left: -230px;
+      background: #FFFB00;
+    }
+
+    .innertext{
+      margin: 20px;
+      font-family: Arial;
+      color: #5e5e5e;
+    }
+
+    #rightcolumn{
+      float: left;
+      width: 230px;
+      margin-left: -230px;
+      background: #fffb00;
+
+    }
+
+    #footer{
+      clear: left;
+      width: 100%;
+      background: black;
+      color: #fff;
+      font-family: Arial;
+      text-align: center;
+      padding: 4px;
+    }
+
+
+
+
+/*responsive*/
+
+    @media (max-width: 840px) {
+      #leftcolumn{
+        margin-left: -100%;
+      }
+      
+      #rightcolumn{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        clear: both;
+      }
+
+      #contentColumn{
+        margin-right: 0;
+      }
+    }
+
+@media (max-width: 600px) {
+  #leftcolumn{
+    float: none;
+    width: 100%;
+    clear: both;
+    margin-left: 0;
+  }
+
+  #contentColumn{
+    margin-left: 0;
+  }
+}
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -61,11 +141,51 @@
 
 
 
+<div id="contentwrapper">
+  <div id="contentColumn">
+    <div class="innertext">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consequuntur cumque distinctio eaque
+      et fugiat, harum itaque, laudantium
+      nam natus numquam odio pariatur ratione reiciendis sapiente sunt temporibus veritatis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consequuntur cumque distinctio eaque
+      et fugiat, harum itaque, laudantium
+      nam natus numquam odio pariatur ratione reiciendis sapiente sunt temporibus veritatis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consequuntur cumque distinctio eaque
+      et fugiat, harum itaque, laudantium
+      nam natus numquam odio pariatur ratione reiciendis sapiente sunt temporibus veritatis?
+    </div>
+  </div>
+</div>
 
+<div id="leftcolumn">
+  <div class="innertext">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consequuntur cumque distinctio eaque
+    et fugiat, harum itaque, laudantium
+    nam natus numquam odio pariatur ratione reiciendis sapiente sunt temporibus veritatis?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consequuntur cumque distinctio eaque
+    et fugiat, harum itaque, laudantium
+    nam natus numquam odio pariatur ratione reiciendis sapiente sunt temporibus veritatis?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consequuntur cumque distinctio eaque
+    et fugiat, harum itaque, laudantium
+    nam natus numquam odio pariatur ratione reiciendis sapiente sunt temporibus veritatis?
+  </div>
+</div>
 
+<div id="rightcolumn">
+  <div class="innertext">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consequuntur cumque distinctio eaque
+    et fugiat, harum itaque, laudantium
+    nam natus numquam odio pariatur ratione reiciendis sapiente sunt temporibus veritatis?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consequuntur cumque distinctio eaque
+    et fugiat, harum itaque, laudantium
+    nam natus numquam odio pariatur ratione reiciendis sapiente sunt temporibus veritatis?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consequuntur cumque distinctio eaque
+    et fugiat, harum itaque, laudantium
+    nam natus numquam odio pariatur ratione reiciendis sapiente sunt temporibus veritatis?
+  </div>
+</div>
 
-
-
+<div id="footer">footer</div>
 
 </body>
 </html>
