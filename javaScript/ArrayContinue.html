@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ArrayContinue</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<script>
+  var cars = ["volvo","Acura","Honda","Lexus"];
+  cars.sort();
+  document.getElementById("demo").innerHTML = cars;
+  cars.reverse();
+  document.getElementById("demo1").innerHTML = cars;
+
+  var boys = ["namal","nimal","sunil"];
+  var girls = ["tharu","shalini","lathaa"];
+
+  var combined = girls.concat(boys);
+  document.getElementById("demo3").innerHTML = combined;
+</script>
+</body>
+</html>

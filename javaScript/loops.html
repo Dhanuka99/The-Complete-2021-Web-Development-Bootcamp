@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loops</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+
+var count;
+
+for (count=0;count<=10;count++){
+  document.write(count);
+  document.write("<br/>")
+}
+
+var txt ="";
+var person = {fname:"dhanuka",lname:"lakshan",age:21};
+
+for (const personKey in person) {
+  txt+=person[personKey] + " ";
+}
+document.getElementById("demo").innerHTML = txt;
+
+
+var i=0;
+while (i<10){
+  document.write(i);
+  document.write("<br/>");
+  i++;
+}
+
+let j;
+
+for (j= 0; j < 10; j++) {
+  if(j==3){
+    break;//3 apu gaman scope ekenma ain wenawa
+  }
+  document.write(j+"<br/>")
+}
+//document.getElementById("demo1").innerHTML = text;
+
+////////////////////////////////////////////////////////////////////
+
+let i;
+
+for (i= 0; i < 10; i++) {
+  if(i==3){
+    continue;//3 enne nethuwa anith ewa print wenwa
+  }
+  document.write(i+"<br/>")
+}
+document.getElementById("demo2").innerHTML = text;
+</script>
+</body>
+</html>

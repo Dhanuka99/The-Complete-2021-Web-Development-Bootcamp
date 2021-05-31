@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSRandomNumber</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+<p id="demo14"></p>
+<p id="demo15"></p>
+<p id="demo16"></p>
+<script>
+  document.getElementById("demo").innerHTML = Math.random();//get the 0 to 1 numbers
+
+  document.getElementById("demo1").innerHTML = Math.min(121,-3,43,-5,57);//get the min number
+
+  document.getElementById("demo2").innerHTML = Math.max(12,3232,43435,6565,76776);//get the max number
+
+  document.getElementById("demo3").innerHTML = Math.round(15.9); //asannama dashamathaneta watayanawa--->16  Math.floor/Math.ceil
+
+  //Arrays
+  var fruits = ["Banana","apple","mango","orange"];
+  document.getElementById("demo4").innerHTML = fruits[2];//index start 0 assign banana
+
+  //Array length
+  document.getElementById("demo5").innerHTML = fruits.length;//how many items == 4
+
+  //Array attributes
+  document.getElementById("demo6").innerHTML = fruits.toString();//Banana,apple,mango,orange
+
+  document.getElementById("demo7").innerHTML = fruits.join(" * ");//Banana * apple * mango * orange
+
+  fruits.pop();//
+  document.getElementById("demo8").innerHTML = fruits.join(" * ");//Banana * apple * mango
+
+  fruits.shift();
+  document.getElementById("demo9").innerHTML = fruits.join(" * ");//apple * mango
+
+  fruits.push("Cherry");
+  document.getElementById("demo10").innerHTML = fruits.join(" * ");//apple * mango * Cherry
+
+  fruits.unshift("cherry");
+  document.getElementById("demo11").innerHTML = fruits.join(" * ");//cherry * apple * mango * Cherry
+
+  //changing and deleting
+  fruits[0] = "kiwi";
+  document.getElementById("demo12").innerHTML = fruits.join(" * ");//kiwi * apple * mango * Cherry
+
+  delete fruits[1];
+  document.getElementById("demo13").innerHTML = fruits.join(" * ");//kiwi * * mango * Cherry
+
+  fruits.splice(2,0,"lemon","pineapple");
+  document.getElementById("demo14").innerHTML = fruits.join(" * ");
+
+</script>
+</body>
+</html>
