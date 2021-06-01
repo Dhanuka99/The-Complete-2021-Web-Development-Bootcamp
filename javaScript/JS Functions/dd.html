@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+input : <input type="text" id="txtValue">
+<button onclick="printString()">OK</button>
+<script>
+  function printString(){
+    let value = document.getElementById("txtValue").value;
+    var x = value.split(" ");
+
+    for (let i = 0; i < x.length; i++) {
+      document.write(x[i]);
+      document.write("<br/>");
+    }
+  }
+</script>
+</body>
+</html>

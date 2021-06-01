@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="radio" id="rectangle">rec <br>
+<input type="radio" id="triangle">tri <br>
+
+<input type="text" id="txtPerameters">
+<input type="button" onclick="calculateperimeter()" value="ok">
+
+<script language="JavaScript" type="text/javascript">
+    function calculateperimeter(){
+        let value = document.getElementById("txtPerameters").value;
+        let x = value.split(",");
+        let length = x[0];
+        let width = x[1];
+        let side = x[2];
+
+        let rec = document.getElementById("rectangle").value;
+        let tri = document.getElementById("triangle").value;
+
+        if (rec){
+            let recArea = length*width;
+            document.write(recArea);
+        }else if (tri){
+            let triArea = length*side/2;
+            document.write(triArea);
+        }else{
+            document.write("Error");
+        }
+    }
+</script>
+</body>
+</html>

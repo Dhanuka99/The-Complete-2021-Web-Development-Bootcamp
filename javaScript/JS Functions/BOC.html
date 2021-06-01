@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOC</title>
+</head>
+<body>
+Input Text Here : <input type="text" name="input" id="txtValue">
+<button onclick="PrintAcroym()">OK</button>
+
+<script language="JavaScript" type="text/javascript">
+    function PrintAcroym(){
+
+        var value = document.getElementById("txtValue").value;
+        var x = value.split(" ");
+        for (let i = 0; i < x.length; i++) {
+            document.write(x[i].charAt(0));
+        }
+    }
+
+</script>
+</body>
+</html>

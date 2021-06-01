@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkFileValidation</title>
+</head>
+<body>
+
+input file name :<input type="text" id="txtValue">
+<button onclick="checkValied()">check</button>
+
+<script>
+  let value = document.getElementById("txtValue").value;
+  let x = value.split(".");
+  if (x[1]=="jpg" || x[1] == "png" || x[1]=="gif"){
+    document.write("file is accepted..");
+  }else{
+    alert("Error");
+  }
+
+</script>
+</body>
+</html>
